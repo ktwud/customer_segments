@@ -19103,7 +19103,8 @@ Once you have performed this implementation, the dataset will be stored in the v
 <li>128: consider as outlier of Delicatessen and Fresh.</li>
 <li>154: consider as outlier of Delicatessen, Milk and Grocery.</li>
 </ul>
-<p>Above data are considered as outlier because the data is not like other data so it would be anoying for model training, maybe guide you to a wrong way, so it's common to exlude the outlier.</p>
+<p>From the list, there are 48 data points considered as outliers in the 440 data points. If almost 10% data points are removed, we could lose some important information, so it might need more justification for the outlier definition.But 5 data points are revealed in 2 or more features, it means the 5 data points is abnormal in many ways, so the 5 data points should be removed. 
+Above data are considered as outlier because the data is not like other data so it would be anoying for model training, maybe guide you to a wrong way, so it's common to exlude the outlier.</p>
 
 </div>
 </div>
@@ -21804,8 +21805,7 @@ The cluster devide all data as 2 clusters/segments</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <ul>
-<li>The wholesale distributor can deploy A/B tests with clusters, for the segment1 is consider as convinience store which is more flexibility to store many products for days. Cluster0 is restaurant that daily usage in fresh will be huge, and restaurant like to serve more fresh food to the end customers.</li>
-<li>Select a small amout of customer to deploy A/B test and watch the results of testing, if testing runs positively so the new solution can be promoted to more customers.</li>
+<li>The wholesale distributor can deploy A/B tests in all customer segments, the wholesale distributor will be able to seperate many hypothesis in each segment to performing the A/B test. Then the hypothesis may be tested on each segment to find opportunity to improve by statitical analysis (click rate for website, purchase rate for online shopping). For example, cluster1 is consider as convinience store which is more flexibility to store many products for days, so the A/B test results may be positively of change the delivery service. Cluster0 is considered as restaurant that daily usage in fresh will be huge, and restaurant like to serve more fresh food to the end customers, so the delivery service change to 3 days a week may not be positive result of A/B test.</li>
 </ul>
 
 </div>
